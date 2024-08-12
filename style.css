@@ -137,6 +137,13 @@ font-weight: 600;
     z-index: 1000;
   }
   @media only screen and (min-width:300px) and (max-width:800px){
+    .signature{
+      display: block !important;
+
+    }
+    .sign-part-1 , .sign-part-2{
+      width: 100% !important;
+    }
     .item:nth-child(2) label{
       width: 228px !important;
     }
@@ -232,6 +239,16 @@ font-weight: 600;
     outline: none;
     font-size: 13px;
   }
+   
+  #current-date {
+    width: 140px;
+    padding-left: 10px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--main);
+    outline: none;
+    font-size: 14px;
+  }
 p{
   color: #000 ;
   font-family: "roboto";
@@ -256,8 +273,9 @@ li{
   outline: none;
   font-size: 13px;
   height: 20px;
-  padding-left: 10px;
+  text-align: right;
   font-family: "roboto";
+
 }
 .item{
   display: flex;
@@ -304,8 +322,18 @@ font-weight: 500;
 .hide-content {
   display: block; /* Initially visible */
 }
+p.hide-content {
+  display: block; /* Ensure <p> elements are displayed as block, but no list styles */
+}
+li.hide-content {
+  display: list-item; /* Ensure <li> elements have list styles */
+}
+ul {
+    list-style-type:circle;
+     /* Ensures bullets are displayed */
+}
 .drawing-box {
-  width: 100%;
+  width: 95%;
   height: 200px;
   border: 2px dashed var(--main);
   background-color: #fff;
@@ -365,3 +393,21 @@ canvas {
     margin-top: 25px;
   }
   }
+  @media only screen and (min-width:1400px) {
+    .form-main{
+      padding: 0px 130px;
+    }
+  }
+ .part-two input[type=number]::-webkit-inner-spin-button,
+ .part-two input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+@media print {
+  header {
+      display: none;
+  }
+  main{
+    margin-top: 0px;
+  }
+}
