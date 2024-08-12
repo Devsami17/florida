@@ -251,7 +251,7 @@ function initial() {
     totalInitialCost.textContent = `$${totalCost.toFixed(2)}`;
     var checkbox  = document.getElementById('advanced-payment-checkbox');
     if(checkbox.checked){
-        Adv.value= `$${totalCost.toFixed(2)}`;
+        Adv.value= `$${additionalCost.toFixed(2)}`;
     }else{
         Adv.value= `$0.00`;
     }
