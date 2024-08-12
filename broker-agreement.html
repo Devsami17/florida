@@ -82,7 +82,7 @@
     <div class="field">
         <p class="section-text">Licensed Real Estate Broker ("Broker"):</p>
         <label for="broker-name" class="label">Name:</label>
-        <input type="text" id="broker-name" class="input" placeholder="Broker of Record Name">
+        <input type="text" id="broker-name" onkeyup="brokerName()" class="input" placeholder="Broker of Record Name">
 
       </div>
       <div class="field">
@@ -109,8 +109,8 @@
 <div class="part-2">
     <div class="field">
         <p class="section-text">Principal("Principal"):</p>
-        <label for="broker-name" class="label">Name:</label>
-        <input type="text" id="broker-name" class="input" placeholder="John Smith" >
+        <label for="principal-name" class="label">Name:</label>
+        <input type="text" id="principal-name" class="input" onkeyup="principal()" placeholder="John Smith" >
       </div>
       <div class="field">
         <label for="broker-address" class="label">Mailing Address:</label>
@@ -272,7 +272,7 @@
                             <div class="message" id="message">Click here to Sign</div>
                         </div>
                         <div class="text-center">
-    <p class="mb-0 mt-2">Cameron Boyd Webb</p>
+    <p class="mb-0 mt-2" id="sign-broker">Broker of Record Name</p>
     <strong>Broker Of Record</strong>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                             <div class="message" id="message">Click here to Sign</div>
                         </div>
                         <div class="text-center">
-    <p class="mb-0 mt-2">John Smith</p>
+    <p class="mb-0 mt-2" id="sign-principal">John Smith</p>
     <strong>Principal</strong>
                         </div>
                     </div>

@@ -393,10 +393,14 @@ canvas {
     margin-top: 25px;
   }
   }
+  .form-main{
+    padding: 0px 40px;
+  }
   @media only screen and (min-width:1400px) {
     .form-main{
       padding: 0px 130px;
     }
+ 
   }
  .part-two input[type=number]::-webkit-inner-spin-button,
  .part-two input[type=number]::-webkit-outer-spin-button {

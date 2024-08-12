@@ -262,3 +262,9 @@ document.getElementById('"Monthly-fee-checkbox').addEventListener('change',()=>{
         initial();
     }
 });
+function brokerName(){
+    document.getElementById('sign-broker').textContent = document.getElementById('broker-name').value;
+}
+function principal(){
+    document.getElementById('sign-principal').textContent = document.getElementById('principal-name').value;
+}
