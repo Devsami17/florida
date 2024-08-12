@@ -171,7 +171,7 @@
             </div>
             </section>
             <section class="section-3 container d-flex gap-5 justify-content-center flex-wrap">   
-                <div class="item">
+                <div class="item mt-4">
                     <div class="item-box">
                         <label>RE 7 Fee:</label>
                         <input type="checkbox" id="re-7-checkbox" checked>
@@ -195,7 +195,7 @@
                     </div>
                     
                 </div>
-                <div class="item part-two">
+                <div class="item part-two mt-4">
                     <div class="item-box">
                         <label>Monthly Fee:</label>
                         <input type="checkbox" checked  id="Monthly-fee-checkbox" >
@@ -256,48 +256,41 @@
             <p><strong>Captions:</strong> Captions and headings are for convenience and do not define or limit the provisions of this Agreement.</p>
             
             </div>
+            <p class="section-text mt-4">Additional Terms :</p>
+            <div class="d-flex gap-2 justify-content-normal align-items-baseline">
+               <span>1.</span>
+             <input type="text" class="form-control w-100">
+            </div>
+            <p class="mt-4"><strong>Signature:</strong></p>
+            <div class="d-flex justify-content-between signature">
+             <div class="mt-4 w-50 sign-part-1">
+                 <div class="drawing-box">
+                     <canvas id="drawingCanvas"></canvas>
+                     <div class="message" id="message">Click here to Sign</div>
+                 </div>
+                 <div class="text-center">
+<p class="mb-0 mt-2" id="sign-broker">Broker of Record Name</p>
+<strong>Broker Of Record</strong>
+                 </div>
+             </div>
+             <div class="mt-4 w-50 sign-part-2">
+                 <div class="drawing-box">
+                     <canvas id="drawingCanvas"></canvas>
+                     <div class="message" id="message">Click here to Sign</div>
+                 </div>
+                 <div class="text-center">
+<p class="mb-0 mt-2" id="sign-principal">John Smith</p>
+<strong>Principal</strong>
+
+                 </div>
+             </div>
+         </div>
+         <div class="buttons w-100 gap-2 d-flex justify-content-center mt-5 mb-5">
+             <button id="clear" class="col-2 p-2" onclick="window.location='broker-agreement.html'">Clear</button>
+             <button id="print" class="col-2 p-2" onclick="window.print()">Print</button>
+                             </div>
             </section>
-            <section class="section-6 mt-4 container">
-                <p class="section-text">Additional Terms :</p>
-               <div class="d-flex gap-2 justify-content-normal align-items-baseline">
-                  <span>1.</span>
-                <input type="text" class="form-control w-100">
-               </div>
-              
-            </section>
-            <section class="section-7 mt-4 container">
-                <p><strong>Signature:</strong></p>
-             
-            </section>
-            <section class="section-8 mt-4 mb-4  container">
-                <div class="d-flex justify-content-between signature">
-                    <div class="mt-4 w-50 sign-part-1">
-                        <div class="drawing-box">
-                            <canvas id="drawingCanvas"></canvas>
-                            <div class="message" id="message">Click here to Sign</div>
-                        </div>
-                        <div class="text-center">
-    <p class="mb-0 mt-2" id="sign-broker">Broker of Record Name</p>
-    <strong>Broker Of Record</strong>
-                        </div>
-                    </div>
-                    <div class="mt-4 w-50 sign-part-2">
-                        <div class="drawing-box">
-                            <canvas id="drawingCanvas"></canvas>
-                            <div class="message" id="message">Click here to Sign</div>
-                        </div>
-                        <div class="text-center">
-    <p class="mb-0 mt-2" id="sign-principal">John Smith</p>
-    <strong>Principal</strong>
-                        </div>
-                    </div>
-                </div>
-       
-                <div class="buttons w-100 gap-2 d-flex justify-content-center mt-5">
-<button id="clear" class="col-2 p-2" onclick="window.location='broker-agreement.html'">Clear</button>
-<button id="print" class="col-2 p-2" onclick="window.print()">Print</button>
-                </div>
-            </section>
+
 
  
         </main>
