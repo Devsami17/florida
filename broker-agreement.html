@@ -69,9 +69,9 @@
            </div>
         </header>
         <main>
-            <div>
-                
-            </div>
+        
+
+         
             <section class="section-1 container">
                 <h3 class="text-center">Real Estate Company And Designated Broker Agreement</h3>
                 <div class="d-flex justify-content-center">
@@ -122,8 +122,8 @@
       </div>
       <div class="field">
         <label for="broker-phone" class="label">Phone Number:</label>
-        <input type="text" id="broker-phone" class="input phone-input" placeholder="(###) ### - ####" maxlength="17" style="width: 145px;" >
-        <input type="text" class="input phone-input second-number" placeholder="(###) ### - ####" maxlength="17" style="width: 145px;">
+        <input type="text" id="broker-phone" class="input phone-input phone-number-first" placeholder="(###) ### - ####" maxlength="17"  >
+        <input type="text" class="input phone-input second-number phone-number-second" placeholder="(###) ### - ####" maxlength="17" >
       </div>
       <div class="field">
         <label for="broker-license" class="label">Document Number:</label>
@@ -269,7 +269,7 @@
                 <p><strong>Signature:</strong></p>
              
             </section>
-            <section class="section-8 mt-4 mb-5 container">
+            <section class="section-8 mt-4 mb-4  container">
                 <div class="d-flex justify-content-between signature">
                     <div class="mt-4 w-50 sign-part-1">
                         <div class="drawing-box">
@@ -298,8 +298,10 @@
 <button id="print" class="col-2 p-2" onclick="window.print()">Print</button>
                 </div>
             </section>
+
+ 
         </main>
-        <footer></footer>
+ 
         <script>
             document.getElementById('Monthly-fee-checkbox').addEventListener('click', function(event) {
     event.preventDefault();

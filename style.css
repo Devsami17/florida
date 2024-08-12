@@ -420,5 +420,22 @@ canvas {
        .part-2 .input{
         width: 160px !important;
     }
+    .phone-number-second{
+     display: none ;
+    }
+    .where-to-find{
+      display: none;
+    }
+    main{
+      background-color: #0056b3;
+    
+    }
 }
 
+
+ section{
+  background-color: #fff;
+}
+.phone-number-first , .phone-number-second{
+  width: 145px;
+}
