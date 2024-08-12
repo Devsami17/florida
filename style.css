@@ -421,6 +421,4 @@ canvas {
         width: 160px !important;
     }
 }
-.page-break {
-  page-break-before: always;
-}
+

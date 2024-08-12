@@ -198,13 +198,14 @@
                 <div class="item part-two">
                     <div class="item-box">
                         <label>Monthly Fee:</label>
-                        <input type="checkbox" checked  id="Monthly-fee-checkbox">
+                        <input type="checkbox" checked  id="Monthly-fee-checkbox" >
                         <input type="text" readonly  value="$300.00" id="Monthly-fee">
                     </div>
                     <div class="item-box">
                         <label>Required Advanced Payments:</label>
                         <input type="checkbox" checked id="advanced-payment-checkbox">
-                       <input type="number" min="1" onchange="initial()"   maxlength="1" id="advanced-payment-selector" class="input" style="width: 34px; height: 20px;" value="1"> <input type="text" readonly id="advanced-payment"  style="margin-left: -7px;" value="$300.00">
+                       <input type="number" min="1" onchange="initial()"   maxlength="1" id="advanced-payment-selector" class="input" style="width: 34px; height: 20px;" value="1">
+                        <input type="text" readonly id="advanced-payment"  style="margin-left: -7px;" value="$300.00">
                     </div>
                     <div class="item-box">
                         <label>Last Months Paid in Advanced:</label>
@@ -299,7 +300,13 @@
             </section>
         </main>
         <footer></footer>
-        
+        <script>
+            document.getElementById('Monthly-fee-checkbox').addEventListener('click', function(event) {
+    event.preventDefault();
+    // Ensure the checkbox remains checked
+    this.checked = true;
+});
+        </script>
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

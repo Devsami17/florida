@@ -238,7 +238,7 @@ function initial() {
     var advanced = parseInt(document.getElementById('advanced-payment').value) || 0;
     
     var lastMonth = parseInt(document.getElementById('last-month').value) || 0;
-    
+    var Adv= document.getElementById('advanced-payment');
     
    
     if(selector == 1){
@@ -247,8 +247,14 @@ function initial() {
         var additionalCost = selector * 300;
     }
     var totalCost = additionalCost  + lastMonth;
-    
+  
     totalInitialCost.textContent = `$${totalCost.toFixed(2)}`;
+    var checkbox  = document.getElementById('advanced-payment-checkbox');
+    if(checkbox.checked){
+        Adv.value= `$${totalCost.toFixed(2)}`;
+    }else{
+        Adv.value= `$0.00`;
+    }
 }
 
 initial();
