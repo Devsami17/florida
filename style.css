@@ -414,4 +414,13 @@ canvas {
   main{
     margin-top: 0px;
   }
+   .part-1 .input{
+      width: 160px;
+    }
+       .part-2 .input{
+        width: 160px !important;
+    }
+}
+.page-break {
+  page-break-before: always;
 }
