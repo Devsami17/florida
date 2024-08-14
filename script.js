@@ -1,4 +1,5 @@
-        // Select all canvas elements
+
+// Select all canvas elements
         const canvases = document.querySelectorAll('canvas');
         const messages = document.querySelectorAll('.message');
 

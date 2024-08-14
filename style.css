@@ -407,7 +407,53 @@ canvas {
     -webkit-appearance: none;
     margin: 0;
 }
+.print-hide {
+  display: flex; /* Visible on the screen */
+}
 @media print {
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+  .signature-text, .sign-part-1 , .sign-part-2 , .additional-terms, .term-of-text{
+    margin-top: 0px !important;
+  }
+  .additional-terms{
+    margin-top: 0px !important;
+  }
+  .term-of-text{
+    margin-top: 5px !important;
+  }
+  .purpose-text{
+    margin-top: 0px !important;
+  }
+  .form-main{
+    padding: 0px 10px !important;
+    align-items: baseline;
+  
+  }
+
+  .drawing-box{
+    height: 100px;
+  }
+  .container{
+    width: 100% !important;
+    --bs-gutter-x:0;
+    --bs-gutter-y: 0;
+
+    padding-right: 0;
+    padding-left: 0;
+    margin-right:0;
+    margin-left: 0;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+  .print-show {
+    display: flex; /* Show when printing */
+}
+.print-hide {
+    display: none; /* Hide always when printing */
+}
   header {
       display: none;
   }
@@ -415,10 +461,13 @@ canvas {
     margin-top: 0px;
   }
    .part-1 .input{
-      width: 180px;
+      width: 160px;
     }
        .part-2 .input{
-        width: 180px !important;
+        width: 160px !important;
+    }
+    .part-2{
+      margin-top: 20px;
     }
     .phone-number-second{
      display: none ;
@@ -427,21 +476,43 @@ canvas {
       display: none;
     }
     main{
-      background-color: #eaeaea;
+      background-color:  #eaeaea;
     
     }
+  .section-1{
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
+  }
     .buttons{
       display: none !important;
     }
     .section-text{
-      font-size: 16px !important;
-    }
-    p{
-      font-size: 13px !important;
+      font-size: 14px !important;
+      margin-bottom: 5px !important;
+    } 
+     p{
+      font-size: 12px !important;
     }
     li{
-      font-size: 13px !important;
+      font-size: 12px !important;
     }
+    .section-2{
+      margin-top: 0px;
+    }
+    .section-5{
+      margin-top: 0px !important;
+    }
+    #sign-principal , .sign-broker{
+      margin-top: 0px !important;
+    }
+    
+label{
+  font-size: 13px !important;
+}
+strong{
+  font-size: 14px !important;
+}
+
 }
 
 
