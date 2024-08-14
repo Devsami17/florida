@@ -275,6 +275,7 @@ li{
   height: 20px;
   text-align: right;
   font-family: "roboto";
+  padding-right: 5px;
 
 }
 .item{
@@ -394,7 +395,7 @@ canvas {
   }
   }
   .form-main{
-    padding: 0px 40px;
+    padding: 10px 40px;
   }
   @media only screen and (min-width:1400px) {
     .form-main{
@@ -478,6 +479,9 @@ canvas {
     main{
       background-color:  #eaeaea;
     
+    }
+    .date-sec{
+margin-top: 10px !important;
     }
   .section-1{
     padding-top: 10px !important;
